@@ -1,14 +1,37 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FlexLayoutModule } from '@angular/flex-layout';
+
+import {MdButtonModule, MdCheckboxModule, MdSidenavModule, MdToolbarModule, MdIconModule} from '@angular/material';
+
 import { AppComponent } from './app.component';
+import { HomeComponent } from './pages/home/home.component';
+
+const appRoutes: Routes = [
+  {path: '', component: HomeComponent}
+];
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule,
+    FlexLayoutModule,
+    MdButtonModule,
+    MdCheckboxModule,
+    MdSidenavModule,
+    MdToolbarModule,
+    MdIconModule,
+    RouterModule.forRoot(
+      appRoutes,
+      { enableTracing: true } // <-- debugging purposes only
+    )
   ],
   providers: [],
   bootstrap: [AppComponent]

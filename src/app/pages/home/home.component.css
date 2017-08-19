@@ -1,0 +1,9 @@
+html, body, app-home, .profile-pic {
+    border-radius: 50%;
+    width: 200px;
+}
+
+html, body, app-home, .content {
+    margin-left: 25%;
+    margin-right: 25%;
+}
