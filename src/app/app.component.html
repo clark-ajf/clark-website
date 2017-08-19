@@ -1,22 +1,23 @@
-<md-toolbar>
-  <span>Clark Jeria</span>
-  <nav class="menu">
-    <a md-button routerLink="." routerLinkActive="mat-accent" aria-label="home"><md-icon aria-hidden="true">home</md-icon> Home</a>
-    <a md-button routerLink="/">About Me</a>
-    <a md-button routerLink="/">Experiences</a>
-    <a md-button routerLink="/">Projects</a>
-    <a md-button routerLink="/">Skills</a>
-    <a md-button routerLink="/">Blogs</a>
-    <a md-button routerLink="/">Contact Me</a>
-  </nav>
-  <span class="example-fill-remaining-space"></span>
-  <a md-icon-button routerLink="/" aria-label="linkedin"><i class="icon ion-social-linkedin" aria-hidden="true"></i></a>
-  <a md-icon-button routerLink="/" aria-label="github"><i class="icon ion-social-github" aria-hidden="true"></i></a>
-  <a md-icon-button routerLink="/" aria-label="facebook"><i class="icon ion-social-facebook" aria-hidden="true"></i></a>
-  <a md-icon-button routerLink="/" aria-label="twitter"><i class="icon ion-social-twitter" aria-hidden="true"></i></a>
-  <a md-icon-button routerLink="/" aria-label="skype"><i class="icon ion-social-skype" aria-hidden="true"></i></a>
-</md-toolbar>
-<md-sidenav-container>
+<md-sidenav-container fullscreen>
+    <md-toolbar>
+        <a class="website" routerLink="/"><span>Clark Jeria</span></a>
+      <nav class="menu">
+        <a md-button routerLink="." routerLinkActive="mat-accent" aria-label="home"><md-icon aria-hidden="true">home</md-icon> Home</a>
+        <a md-button routerLink="/">About Me</a>
+        <a md-button routerLink="/">Experiences</a>
+        <a md-button routerLink="/">Projects</a>
+        <a md-button routerLink="/">Skills</a>
+        <a md-button routerLink="/">Recommendations</a>
+        <a md-button routerLink="/">Blogs</a>
+        <a md-button routerLink="/">Contact Me</a>
+      </nav>
+      <span class="example-fill-remaining-space"></span>
+      <a md-icon-button routerLink="/" aria-label="linkedin"><i class="icon ion-social-linkedin" aria-hidden="true"></i></a>
+      <a md-icon-button routerLink="/" aria-label="github"><i class="icon ion-social-github" aria-hidden="true"></i></a>
+      <a md-icon-button routerLink="/" aria-label="facebook"><i class="icon ion-social-facebook" aria-hidden="true"></i></a>
+      <a md-icon-button routerLink="/" aria-label="twitter"><i class="icon ion-social-twitter" aria-hidden="true"></i></a>
+      <a md-icon-button routerLink="/" aria-label="skype"><i class="icon ion-social-skype" aria-hidden="true"></i></a>
+    </md-toolbar>
     <div class="my-content"><router-outlet></router-outlet></div>
 </md-sidenav-container>
 
