@@ -1,0 +1,44 @@
+.icon-item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.icon-item span{
+    margin-left: 10px;
+}
+
+.icon-item span a, .icon-item a{
+    text-decoration: none;
+    color: white;
+    line-height: 24px;
+}
+
+.icon-item a{
+    margin-left: 5px;
+}
+
+.icon-item mat-chip{
+    color: #b0bec5; 
+    background-color: #212121;
+    margin-left: 10px;
+    padding: 6px;
+}
+
+.icon-item .new-window{
+    margin-left: 5px;
+    font-size: 14px;
+}
+
+.mat-card-title{    
+    font-size: 16px;
+    font-weight: 600;
+}
+
+mat-panel-title, mat-panel-description {
+    line-height: 24px
+}
+
+mat-panel-title mat-icon {
+    margin-right: 10px;
+}

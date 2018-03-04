@@ -1,45 +1,49 @@
-<md-sidenav-container fullscreen>
-    <md-toolbar>
+<mat-sidenav-container fullscreen>
+    <mat-toolbar>
         <a class="website" routerLink="/"><span>Clark Jeria</span></a>
       <nav class="menu" fxHide.lt-lg>
-        <a md-button routerLink="." routerLinkActive="mat-accent" aria-label="home"><md-icon aria-hidden="true">home</md-icon> Home</a>
-        <a md-button routerLink="/">About Me</a>
-        <a md-button routerLink="/">Experiences</a>
-        <a md-button routerLink="/">Projects</a>
-        <a md-button routerLink="/">Skills</a>
-        <a md-button routerLink="/">Recommendations</a>
-        <a md-button routerLink="/">Blogs</a>
-        <a md-button routerLink="/">Contact Me</a>
+        <a mat-button routerLink="." routerLinkActive="mat-accent" aria-label="home"><mat-icon aria-hidden="true">home</mat-icon> Home</a>
+        <a mat-button routerLink="/aboutme">About Me</a>
+        <a mat-button routerLink="/experiences">Experiences</a>
+        <a mat-button routerLink="/projects">Projects</a>
+        <a mat-button routerLink="/education">Education</a>
+        <a mat-button routerLink="/skills">Skills</a>
+        <a mat-button routerLink="/recommendations">Recommendations</a>
+        <a mat-button routerLink="/certifications">Certifications</a>
+        <a mat-button routerLink="/blogs">Blogs</a>
+        <a mat-button routerLink="/contactme">Contact Me</a>
       </nav>
       <span class="example-fill-remaining-space"></span>
-      <a md-icon-button (click)="sidenav.open()" aria-label="menu" fxHide.gt-lg fxHide.lg><md-icon aria-hidden="true">menu</md-icon></a>
+      <a mat-icon-button (click)="sidenav.open()" aria-label="menu" fxHide.gt-lg fxHide.lg><mat-icon aria-hidden="true">menu</mat-icon></a>
       <nav class="menu-social" fxHide.lt-lg>
-        <a md-icon-button target="_blank" href="https://www.linkedin.com/in/clarkjeria/en/" aria-label="linkedin"><i class="icon ion-social-linkedin" aria-hidden="true"></i></a>
-        <a md-icon-button target="_blank" href="https://github.com/clark-ajf/" aria-label="github"><i class="icon ion-social-github" aria-hidden="true"></i></a>
-        <a md-icon-button target="_blank" href="https://www.facebook.com/ClarkJF" aria-label="facebook"><i class="icon ion-social-facebook" aria-hidden="true"></i></a>
-        <a md-icon-button target="_blank" href="https://twitter.com/Clark_Jeria" aria-label="twitter"><i class="icon ion-social-twitter" aria-hidden="true"></i></a>
-        <a md-icon-button target="_blank" href="skype:clark.jeria" aria-label="skype"><i class="icon ion-social-skype" aria-hidden="true"></i></a>
+        <a mat-icon-button target="_blank" href="https://www.linkedin.com/in/clarkjeria/en/" aria-label="linkedin"><i class="icon ion-social-linkedin" aria-hidden="true"></i></a>
+        <a mat-icon-button target="_blank" href="https://github.com/clark-ajf/" aria-label="github"><i class="icon ion-social-github" aria-hidden="true"></i></a>
+        <a mat-icon-button target="_blank" href="https://www.facebook.com/ClarkJF" aria-label="facebook"><i class="icon ion-social-facebook" aria-hidden="true"></i></a>
+        <a mat-icon-button target="_blank" href="https://twitter.com/Clark_Jeria" aria-label="twitter"><i class="icon ion-social-twitter" aria-hidden="true"></i></a>
+        <a mat-icon-button target="_blank" href="skype:clark.jeria" aria-label="skype"><i class="icon ion-social-skype" aria-hidden="true"></i></a>
       </nav>
-    </md-toolbar>
-    <md-sidenav #sidenav mode="push">
-        <md-nav-list class="side-menu">        
-          <h3 md-line>Menu</h3>    
-          <a md-list-item routerLink="." routerLinkActive="mat-accent">Home</a>
-          <a md-list-item routerLink="/">About Me</a>
-          <a md-list-item routerLink="/">Experiences</a>
-          <a md-list-item routerLink="/">Projects</a>
-          <a md-list-item routerLink="/">Skills</a>
-          <a md-list-item routerLink="/">Recommendations</a>
-          <a md-list-item routerLink="/">Blogs</a>
-          <a md-list-item routerLink="/">Contact Me</a>
-        </md-nav-list>
+    </mat-toolbar>
+    <mat-sidenav #sidenav mode="push">
+        <mat-nav-list class="side-menu">        
+          <h3 mat-line>Menu</h3>    
+          <a mat-list-item routerLink="." routerLinkActive="mat-accent">Home</a>
+          <a mat-list-item routerLink="/aboutme">About Me</a>
+          <a mat-list-item routerLink="/experiences">Experiences</a>
+          <a mat-list-item routerLink="/projects">Projects</a>
+          <a mat-list-item routerLink="/education">Education</a>
+          <a mat-list-item routerLink="/skills">Skills</a>
+          <a mat-list-item routerLink="/recommendations">Recommendations</a>
+          <a mat-list-item routerLink="/certifications">Certifications</a>
+          <a mat-list-item routerLink="/blogs">Blogs</a>
+          <a mat-list-item routerLink="/contactme">Contact Me</a>
+        </mat-nav-list>
         <nav class="menu-social">
-          <a md-icon-button target="_blank" href="https://www.linkedin.com/in/clarkjeria/en/" aria-label="linkedin"><i class="icon ion-social-linkedin" aria-hidden="true"></i></a>
-          <a md-icon-button target="_blank" href="https://github.com/clark-ajf/" aria-label="github"><i class="icon ion-social-github" aria-hidden="true"></i></a>
-          <a md-icon-button target="_blank" href="https://www.facebook.com/ClarkJF" aria-label="facebook"><i class="icon ion-social-facebook" aria-hidden="true"></i></a>
-          <a md-icon-button target="_blank" href="https://twitter.com/Clark_Jeria" aria-label="twitter"><i class="icon ion-social-twitter" aria-hidden="true"></i></a>
-          <a md-icon-button target="_blank" href="skype:clark.jeria" aria-label="skype"><i class="icon ion-social-skype" aria-hidden="true"></i></a>
+          <a mat-icon-button target="_blank" href="https://www.linkedin.com/in/clarkjeria/en/" aria-label="linkedin"><i class="icon ion-social-linkedin" aria-hidden="true"></i></a>
+          <a mat-icon-button target="_blank" href="https://github.com/clark-ajf/" aria-label="github"><i class="icon ion-social-github" aria-hidden="true"></i></a>
+          <a mat-icon-button target="_blank" href="https://www.facebook.com/ClarkJF" aria-label="facebook"><i class="icon ion-social-facebook" aria-hidden="true"></i></a>
+          <a mat-icon-button target="_blank" href="https://twitter.com/Clark_Jeria" aria-label="twitter"><i class="icon ion-social-twitter" aria-hidden="true"></i></a>
+          <a mat-icon-button target="_blank" href="skype:clark.jeria" aria-label="skype"><i class="icon ion-social-skype" aria-hidden="true"></i></a>
         </nav>
-    </md-sidenav>
+    </mat-sidenav>
     <div class="my-content"><router-outlet></router-outlet></div>
-</md-sidenav-container>
+</mat-sidenav-container>
